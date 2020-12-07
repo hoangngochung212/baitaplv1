@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./font/fontawesome-pro/css/all.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="btn">
+      <button class="btn-primary show-login">Đăng nhập hệ thống</button>
+    </div>
+    <div class="modal">
+      <div class="over-lay" onclick="closeModal()"></div>
+      <div class="modal_body">
+        <div class="form-container">
+          <i class="exit fal fa-times" onclick="closeModal()"></i>
+          <form action="" class="form-main">
+            <h1>Member Login</h1>
+            <div class="form-control">
+              <span class="fa fa-user"></span>
+              <input type="text" placeholder="User name" id="name" />
+            </div>
+            <div class="form-control">
+              <span class="fa fa-lock"></span>
+              <input type="password" placeholder="Password" id="pass" />
+            </div>
+            <span class="message-eror"></span>
+            <div class="form-submit">
+              <button class="btn-primary login" id="login">
+                <span>Login</span>
+                <div class="loader"></div>
+              </button>
+              <button class="btn-primary save">Save</button>
+            </div>
+          </form>
+          <div class="forget-pass">
+            <span> forgot password ?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
